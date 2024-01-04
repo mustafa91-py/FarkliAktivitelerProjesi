@@ -4,6 +4,9 @@ plugins {
 }
 
 android {
+    viewBinding{
+        enable = true
+    }
     namespace = "com.mustafauyar.farkliaktivitelerprojesi"
     compileSdk = 34
 
