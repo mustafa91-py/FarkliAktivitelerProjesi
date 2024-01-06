@@ -1,5 +1,4 @@
 package com.mustafauyar.farkliaktivitelerprojesi
-import com.mustafauyar.farkliaktivitelerprojesi.databinding.ActivityMainBinding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,10 +11,10 @@ class IkinciAktivite : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ikinci_aktivite)
 //        val intent = intent
-        val alınanVeri = intent.getStringExtra("yollananVeri")
+        val alinanveri = intent.getStringExtra("yollananVeri")
         binding = ActivityIkinciAktiviteBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.ikinciText.text = alınanVeri
+        binding.ikinciText.text = alinanveri
     }
     fun aktiviteDegistir(view: View){
         val intent = Intent(applicationContext,MainActivity::class.java)
